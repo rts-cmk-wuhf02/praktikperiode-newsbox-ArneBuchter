@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const postcss = require('gulp-postcss');
 const ejs = require('gulp-ejs');
 const rename = require('gulp-rename');
 const connect = require('gulp-connect');
@@ -29,6 +30,9 @@ function watchHtml() {
 function scss(done) {
     gulp.src('./src/css/**/*.scss')
         .pipe(sass())
+        .pipe(postcss([
+            require('tailwindcss')
+        ]))
         .pipe(gulp.dest('./dist/assets/css'))
         .pipe(connect.reload());
     done();
