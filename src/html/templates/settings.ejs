@@ -5,7 +5,7 @@
 <%- include('../partials/headerUlStart') %>
 <%- include('../partials/headerBackarrow') %>
 <%- include('../partials/headerSiteStart') %>Settings<%- include('../partials/headerSiteEnd') %>
-<%- include('../partials/headerSettings') %>
+<%- include('../partials/headerSettingsno') %>
 <%- include('../partials/headerUlEnd') %>
 
 <main class="bg-gray-200 settings">
@@ -14,17 +14,54 @@
     <h2 class="settings__heading settings__heading-two">Categories</h2>
 
     <section class="settings__wrapper">
-        <section class="settings__catPicker settings__catPicker-top"><p class="settings__catPicker-tekst">Europe</p></section>
-        <section class="settings__catPicker settings__catPicker-middle"><p class="settings__catPicker-tekst">Health</p></section>
-        <section class="settings__catPicker settings__catPicker-middle"><p class="settings__catPicker-tekst">Sport</p></section>
-        <section class="settings__catPicker settings__catPicker-middle"><p class="settings__catPicker-tekst">Business</p></section>
-        <section class="settings__catPicker settings__catPicker-bottom"><p class="settings__catPicker-tekst">Travel</p></section>
+        <section class="settings__catPicker settings__catPicker-top">
+            <p class="settings__catPicker-tekst">Europe</p>
+            <label class="settings__switch">
+                <input type="checkbox" checked>
+                <span class="settings__slider settings__round"></span>
+             </label>              
+        </section>
+
+        <section class="settings__catPicker settings__catPicker-middle">
+            <p class="settings__catPicker-tekst">Health</p>
+            <label class="settings__switch">
+                <input type="checkbox" checked>
+                <span class="settings__slider settings__round"></span>
+            </label>  
+        </section>
+
+        <section class="settings__catPicker settings__catPicker-middle">
+            <p class="settings__catPicker-tekst">Sport</p>
+            <label class="settings__switch">
+                <input type="checkbox" checked>
+                <span class="settings__slider settings__round"></span>
+            </label>              
+        </section>
+
+        <section class="settings__catPicker settings__catPicker-middle">
+            <p class="settings__catPicker-tekst">Business</p>
+            <label class="settings__switch">
+                <input type="checkbox" checked>
+                <span class="settings__slider settings__round"></span>
+            </label>
+        </section>
+
+        <section class="settings__catPicker settings__catPicker-bottom">
+            <p class="settings__catPicker-tekst">Travel</p>
+            <label class="settings__switch">
+                <input type="checkbox" checked>
+                <span class="settings__slider settings__round"></span>
+            </label>              
+        </section>
     </section>
 
     <div class="settings__button-wrapper">
         <button class="settings__button">TOGGLE DARK MODE</button>
     </div>
 </main>
+<footer class="settings__footer">
+    <p class="settings__footer-text">version: 1.0.0.2020</p>
+</footer>
 
 
 
